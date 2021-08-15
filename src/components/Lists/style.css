@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #111111;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;;
+}
+.movieRow {
+    margin-bottom: 30px;
+}
+.movieRow h2 {
+    margin: 0px 0px 0px 30px;
+}
+.movieRowArea {
+    overflow-x: hidden;
+    padding-left: 30px;
+}
+.movieRowList {
+    width: 99999px;
+}
+.movieRowItem {
+    display: inline-block;
+    width: 240px;
+    cursor: pointer;
+}
+.movieRowItem img {
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.3s;
+}
+.movieRow img:hover {
+    transform: scale(1);
+}
