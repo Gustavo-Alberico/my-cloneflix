@@ -17,10 +17,7 @@ function App() {
             //Get all results of Requests.js 
             let list = await Requests.getHomeList();
             
-            setTimeout(function(){ 
-                setMovieList(list); 
-            }, 3000);
-                        
+            setMovieList(list);  
             
             //Get a single movie or tv show
             let originals = list.filter(i => i.slug === 'originals');
