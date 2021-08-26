@@ -40,7 +40,7 @@
     margin-top: 15px;
     font-size: 20px;
     color: #999999;
-    max-width: 40%;
+    max-width: 45%;
 }
 .featuredButtons {
     margin-top: 15px;
@@ -73,4 +73,28 @@
     margin-top: 15px;
     font-size: 18px;
     color: #999999;
+}
+
+@media (max-width: 760px) {
+    .featured {
+        height: 90vh;
+    }
+    .featuredName {
+        font-size: 40px;
+    }
+    .featuredInfo {
+        font-size: 16px;
+    }
+    .featuredDescription {
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+    .featuredWatchButton, 
+    .featuredMyListButton {
+        font-size: 14px;
+    }
+    .featuredGenres {
+        font-size: 14px;
+    }
 }

@@ -1,6 +1,5 @@
 const API_KEY =process.env.REACT_APP_API_KEY;
 const API_BASE = 'https://api.themoviedb.org/3';
-const type = ['movie', 'tv'] 
 
 
 const baseFetch = async (endpoint) =>{
@@ -14,8 +13,7 @@ const Requests = {
             {
                 slug: 'originals',
                 title: 'Originais Netflix',
-                type: type[1],
-                items: await baseFetch(`/discover/${type[1]}?with_network=213&language=pt-BR&api_key=${API_KEY}`) 
+                items: await baseFetch(`/discover/tv?with_network=213&language=pt-BR&api_key=${API_KEY}`) 
             },
             {
                 slug: 'trending',
